@@ -2,7 +2,7 @@
   "version": 1,
   "parts": [
     {
-      "category": "battery",
+      "category": "BATTERY",
       "name": "PKCELL LP503562",
       "voltage": {
         "min": 3.7,

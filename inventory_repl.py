@@ -5,7 +5,8 @@ import shlex
 from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
-
+import subprocess
+import sys
 
 DB_VERSION = 1
 
@@ -225,6 +226,11 @@ def help_text() -> str:
   edit <id>
       Interactive edit for an item.
 
+  viewer [--wait]
+      Opens the GUI viewer (inventory_viewer.py) in a separate window.
+      viewer --wait  -> block REPL until viewer closes
+
+
 Tips:
   - Put names with spaces in quotes: add then Name: "DC-DC Buck Converter"
 """
@@ -362,6 +368,35 @@ def action_edit(db_path: Path, db: Dict[str, Any], id_: int) -> None:
             return
     print("Not found.")
 
+# ----------------------------
+# VIEWER
+# ----------------------------
+
+def launch_viewer(db_path: Path, wait: bool = False) -> None:
+    """
+    Launch the GUI viewer in a separate process.
+    Uses the same Python interpreter that's running the REPL.
+    """
+    viewer_script = Path(__file__).with_name("inventory_viewer.py")
+
+    if not viewer_script.exists():
+        print(f"Viewer script not found: {viewer_script}")
+        print("Make sure inventory_viewer.py is in the same folder as this REPL.")
+        return
+
+    cmd = [sys.executable, str(viewer_script)]
+
+    try:
+        if wait:
+            subprocess.run(cmd, check=False)
+        else:
+            # New process; REPL continues running
+            subprocess.Popen(cmd)
+        print("Viewer launched.")
+        print("Tip: use the viewer's Reload button after adding parts.")
+    except Exception as e:
+        print(f"Failed to launch viewer: {e}")
+
 
 # ----------------------------
 # REPL
@@ -449,6 +484,10 @@ def repl(db_path: Path) -> None:
                     print("Usage: edit <id>")
                     continue
                 action_edit(db_path, db, int(args[1]))
+            elif cmd == "viewer":
+                wait = ("--wait" in args)
+                launch_viewer(db_path, wait=wait)
+
 
             else:
                 print("Unknown command. Type 'help' for a list of commands.")
