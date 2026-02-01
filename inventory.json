@@ -1,4 +1,464 @@
 {
   "version": 1,
-  "parts": []
+  "parts": [
+    {
+      "category": "battery",
+      "name": "PKCELL LP503562",
+      "voltage": {
+        "min": 3.7,
+        "max": 3.7,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 1200.0,
+        "max": 1200.0,
+        "unit": "MAH"
+      },
+      "quantity": 1,
+      "notes": "N/A",
+      "id": 1
+    },
+    {
+      "category": "BATTERY",
+      "name": "PKCELL LP503035",
+      "voltage": {
+        "min": 3.7,
+        "max": 3.7,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 500.0,
+        "max": 500.0,
+        "unit": "MAH"
+      },
+      "quantity": 2,
+      "notes": "N/A",
+      "id": 2
+    },
+    {
+      "category": "BATTERY",
+      "name": "PKCELL LP401230",
+      "voltage": {
+        "min": 3.7,
+        "max": 3.7,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 105.0,
+        "max": 105.0,
+        "unit": "MAH"
+      },
+      "quantity": 1,
+      "notes": "N/A",
+      "id": 3
+    },
+    {
+      "category": "BATTERY",
+      "name": "YAY 21700",
+      "voltage": {
+        "min": 7.4,
+        "max": 7.4,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 3000.0,
+        "max": 3000.0,
+        "unit": "MAH"
+      },
+      "quantity": 1,
+      "notes": "N/A",
+      "id": 4
+    },
+    {
+      "category": "BUCK",
+      "name": "CPT",
+      "voltage": {
+        "min": 7.0,
+        "max": 22.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 3.0,
+        "max": 3.0,
+        "unit": "A"
+      },
+      "quantity": 2,
+      "notes": "INPUT 7-22VDC OUTPUT 5VDC 3A MAX",
+      "id": 5
+    },
+    {
+      "category": "BUCK",
+      "name": "JIELAITE LK1253",
+      "voltage": {
+        "min": 12.0,
+        "max": 12.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 3.0,
+        "max": 3.0,
+        "unit": "A"
+      },
+      "quantity": 2,
+      "notes": "INPUT 12VDC OUTPUT 5VDC 3A MAX",
+      "id": 6
+    },
+    {
+      "category": "BUCK",
+      "name": "TOBSUN EA50-5V",
+      "voltage": {
+        "min": 12.0,
+        "max": 24.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 3.0,
+        "max": 3.0,
+        "unit": "A"
+      },
+      "quantity": 2,
+      "notes": "INPUT 12-24VDC OUTPUT 5VDC 10A MAX",
+      "id": 7
+    },
+    {
+      "category": "FAN",
+      "name": "SUNON PMD2406PTV1-A",
+      "voltage": {
+        "min": 24.0,
+        "max": 24.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "A"
+      },
+      "quantity": 1,
+      "notes": "4.3W",
+      "id": 8
+    },
+    {
+      "category": "FAN",
+      "name": "CREALITY 4010",
+      "voltage": {
+        "min": 24.0,
+        "max": 24.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 0.1,
+        "max": 0.1,
+        "unit": "A"
+      },
+      "quantity": 1,
+      "notes": "EFS-04D24L",
+      "id": 9
+    },
+    {
+      "category": "FAN",
+      "name": "VILROS RP FAN",
+      "voltage": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 0.15,
+        "max": 0.15,
+        "unit": "A"
+      },
+      "quantity": 1,
+      "notes": "ED3007S1M-AP00",
+      "id": 10
+    },
+    {
+      "category": "BUCK",
+      "name": "LM2596",
+      "voltage": {
+        "min": 3.0,
+        "max": 40.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 3.0,
+        "max": 3.0,
+        "unit": "A"
+      },
+      "quantity": 9,
+      "notes": "INPUT 3-40VDC OUTPUT 1.5-35VDC 3A MAX 2A CONTINUOUS",
+      "id": 11
+    },
+    {
+      "category": "MICRO-CONTROLLER",
+      "name": "ESP32-C6-DEVKITC-1 V1.2",
+      "voltage": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 80.0,
+        "max": 350.0,
+        "unit": "MA"
+      },
+      "quantity": 3,
+      "notes": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html",
+      "id": 12
+    },
+    {
+      "category": "MICRO-CONTROLLER",
+      "name": "ESP32 V2 FEATHER",
+      "voltage": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 1.0,
+        "max": 1.5,
+        "unit": "A"
+      },
+      "quantity": 1,
+      "notes": "https://www.adafruit.com/product/5900",
+      "id": 13
+    },
+    {
+      "category": "MICRO-CONTROLLER",
+      "name": "ESP32 DEVKIT V1 TYPEC",
+      "voltage": {
+        "min": 3.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 100.0,
+        "max": 250.0,
+        "unit": "MA"
+      },
+      "quantity": 3,
+      "notes": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/index.html",
+      "id": 14
+    },
+    {
+      "category": "DISPLAY",
+      "name": "GME12864 V3.22",
+      "voltage": {
+        "min": 3.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 8.0,
+        "max": 16.0,
+        "unit": "MA"
+      },
+      "quantity": 1,
+      "notes": "N/A",
+      "id": 15
+    },
+    {
+      "category": "DISPLAY",
+      "name": "ADAFRUIT BONNET",
+      "voltage": {
+        "min": 3.0,
+        "max": 3.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 100.0,
+        "max": 100.0,
+        "unit": "MA"
+      },
+      "quantity": 1,
+      "notes": "https://learn.adafruit.com/adafruit-128x64-oled-bonnet-for-raspberry-pi/overview",
+      "id": 16
+    },
+    {
+      "category": "MICRO-CONTROLLER",
+      "name": "RASPBERRY PI ZERO W V1.1",
+      "voltage": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 80.0,
+        "max": 250.0,
+        "unit": "MA"
+      },
+      "quantity": 1,
+      "notes": "https://www.adafruit.com/product/3400?gad_source=1&gad_campaignid=23438252138&gbraid=0AAAAADx9JvQCQRCCTdgtJe1dk1o6WV-6j&gclid=Cj0KCQiA7fbLBhDJARIsAOAqhscaJ_9J3pZZ6wiXFc8SMB4IiTivsDt2In-scaPjAr6wafLghuGj9bUaAubgEALw_wcB",
+      "id": 17
+    },
+    {
+      "category": "BOOSTER",
+      "name": "POWERBOOST 500 TPS61090",
+      "voltage": {
+        "min": 3.7,
+        "max": 3.7,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 500.0,
+        "max": 500.0,
+        "unit": "MA"
+      },
+      "quantity": 2,
+      "notes": "https://www.electromaker.io/shop/product/powerboost-500-recharge-5v-lipo?gad_source=1&gad_campaignid=17338710367&gbraid=0AAAAAB8F3FkhrGOvi5GqR_4axorBPeDIl&gclid=Cj0KCQiA7fbLBhDJARIsAOAqhseIvO1z_I2pgge8vtV_06rJSZq0DG-g9n35xecQ_dHoIbj97xJ-M64aAsOxEALw_wcB",
+      "id": 18
+    },
+    {
+      "category": "BATTERY-CHARGER",
+      "name": "ADAFRUIT MICROLIPO",
+      "voltage": {
+        "min": 3.7,
+        "max": 3.7,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 100.0,
+        "max": 100.0,
+        "unit": "MA"
+      },
+      "quantity": 2,
+      "notes": "https://www.adafruit.com/product/1304",
+      "id": 19
+    },
+    {
+      "category": "MOTION-SENSOR",
+      "name": "MPU-6050 SY-104",
+      "voltage": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 3.6,
+        "max": 3.6,
+        "unit": "MA"
+      },
+      "quantity": 2,
+      "notes": "N/A",
+      "id": 20
+    },
+    {
+      "category": "BUCK",
+      "name": "TLV62569",
+      "voltage": {
+        "min": 3.5,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 1.2,
+        "max": 1.2,
+        "unit": "A"
+      },
+      "quantity": 2,
+      "notes": "https://www.adafruit.com/product/4711?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvSwArn1MG_n3nlIsux6idS_T&gclid=Cj0KCQiA7fbLBhDJARIsAOAqhse12UArEQ5O4WKJ398rR0J2YUGUsq-UliSEVlMCrGCnBkaflFbf4ZwaAm_JEALw_wcB",
+      "id": 21
+    },
+    {
+      "category": "MICRO-CONTROLLER",
+      "name": "SEEED STUDIO ESP32-C3",
+      "voltage": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "V"
+      },
+      "current": {
+        "min": 500.0,
+        "max": 500.0,
+        "unit": "MA"
+      },
+      "quantity": 1,
+      "notes": "https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html?srsltid=AfmBOoozExwko1bbpKjEpfKDlytXUarp18oWFW3uaYUPTYcQkDsuD8e1",
+      "id": 22
+    },
+    {
+      "category": "MICRO-CONTROLLER",
+      "name": "KB2040",
+      "voltage": {
+        "min": 3.3,
+        "max": 3.3,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 500.0,
+        "max": 500.0,
+        "unit": "MA"
+      },
+      "quantity": 1,
+      "notes": "https://www.adafruit.com/product/5302?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvSwArn1MG_n3nlIsux6idS_T&gclid=Cj0KCQiA7fbLBhDJARIsAOAqhscNRwAxQQP1tckB7JjzIg5QAwE4lG564Hn2-YDy3pVWn5h8ogF6YtgaArLPEALw_wcB",
+      "id": 23
+    },
+    {
+      "category": "TOF-SENSOR",
+      "name": "VL53L1X",
+      "voltage": {
+        "min": 5.0,
+        "max": 5.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 5.0,
+        "max": 20.0,
+        "unit": "MA"
+      },
+      "quantity": 2,
+      "notes": "https://www.adafruit.com/product/3967?gad_source=1&gad_campaignid=23438252138&gbraid=0AAAAADx9JvQCQRCCTdgtJe1dk1o6WV-6j&gclid=Cj0KCQiA7fbLBhDJARIsAOAqhsdxNwK5s_58OGRONNYOz38W4lz3IvH8VD2LU02k9512laJv_8MeYPoaAnIFEALw_wcB",
+      "id": 24
+    },
+    {
+      "category": "TOF-SENSOR",
+      "name": "VL53LDK",
+      "voltage": {
+        "min": 2.6,
+        "max": 3.5,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 18.0,
+        "max": 30.0,
+        "unit": "MA"
+      },
+      "quantity": 6,
+      "notes": "N/A",
+      "id": 25
+    },
+    {
+      "category": "TOF-SENSOR",
+      "name": "VL53L1X QWIIC",
+      "voltage": {
+        "min": 2.6,
+        "max": 3.5,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 16.0,
+        "max": 30.0,
+        "unit": "MA"
+      },
+      "quantity": 1,
+      "notes": "https://www.sparkfun.com/sparkfun-distance-sensor-breakout-4-meter-vl53l1x-qwiic.html",
+      "id": 26
+    },
+    {
+      "category": "LIMIT-SWITCH",
+      "name": "FYSETC LIMIT SWITCH",
+      "voltage": {
+        "min": 1.0,
+        "max": 125.0,
+        "unit": "VDC"
+      },
+      "current": {
+        "min": 1.0,
+        "max": 1.0,
+        "unit": "A"
+      },
+      "quantity": 4,
+      "notes": "https://www.yemalu.org/product-p-449571.html",
+      "id": 27
+    }
+  ]
 }
